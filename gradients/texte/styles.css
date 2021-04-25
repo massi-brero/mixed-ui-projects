@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+}
+
+.welcome-future {
+    color: white;
+    font-size: 80px;
+    margin: 0px auto;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 200px;
+    padding: 25px;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .welcome-future {
+        color: transparent;
+        background-image: linear-gradient(45deg, white, rgb(90, 89, 89), white);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
