@@ -1,0 +1,67 @@
+:root {
+    font-size: 62.5%;
+}
+
+.select-wrapper {
+    width: 20rem;
+    position: relative;
+    font-family: "Academy Engraved LET", sans-serif;
+}
+
+.select-wrapper select {
+    display: none;
+}
+
+/*Style arrow in select element*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 1.4rem;
+    right: 1rem;
+    width: 0;
+    height: 0;
+    border: .6rem solid transparent;
+    border-color: white transparent transparent transparent;
+}
+
+/*point arrow upwards when select box is open*/
+.select-wrapper.select-arrow-active:after {
+    color: white;
+    padding: .8rem 1.6rem;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, .1) transparent;
+    cursor: pointer;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent white transparent;
+    top: .7rem;
+}
+
+/*style options, including the selected one*/
+.select-items div, .select-selected {
+    color: white;
+    padding: .8rem 1.6rem;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, .1) transparent;
+    cursor: pointer
+}
+
+/*style options*/
+.select-items {
+    position: absolute;
+    background-color: dodgerblue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, .1);
+}
