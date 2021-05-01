@@ -1,15 +1,19 @@
 :root {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 .select-wrapper {
     width: 20rem;
     position: relative;
-    font-family: "Academy Engraved LET", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .select-wrapper select {
     display: none;
+}
+
+.select-selected {
+    background-color: dodgerblue;
 }
 
 /*Style arrow in select element*/
