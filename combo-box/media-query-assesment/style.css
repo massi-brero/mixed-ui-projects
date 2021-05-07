@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.card {
+    padding: 9rem 3rem;
+    margin-bottom: 2em;
+    float: none;
+    height: 20rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(30deg, #f0803f, #a3371c);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    color: black;
+    text-align: center;
+}
+
+
+.col {
+    width: 100%;
+}
+
+.card h1 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 32em) {
+    .card {
+        background: linear-gradient(30deg, #423ff0, #c227ad);
+    }
+
+    .col {
+        width: 50%;
+        padding: 2rem 2rem;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .card {
+        background: linear-gradient(30deg, #3ff0a6, #49e023);
+    }
+}
+
