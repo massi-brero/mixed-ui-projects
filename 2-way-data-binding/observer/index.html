@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formular</title>
+	</head>
+	<body>
+		<h3>Example V3 2-way data-binding</h3>
+		<label for="firstname">
+			<div>First name</div>
+			<input type="text" id="firstname" data-bind="first" />
+		</label>
+		<label for="secondname">
+			<div>Last name</div>
+			<input type="text" id="secondname" data-bind="last" />
+		</label>
+		<label for="fullname">
+			<div>Last name</div>
+			<input type="text" id="fullname" data-bind="full" />
+		</label>
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
