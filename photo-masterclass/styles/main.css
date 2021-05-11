@@ -23,6 +23,12 @@ html {
     background-size: 100vw 10vw, cover;
 }
 
+.icon {
+    fill: currentColor;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
 .navigation__list {
     display: flex;
     justify-content: space-evenly;
@@ -38,6 +44,7 @@ html {
     text-decoration: none;
     padding: .25rem;
     margin: 2rem 2rem 0 2rem;
+    font-size: 1.0rem;
 }
 
 
