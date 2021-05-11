@@ -1,5 +1,8 @@
-export default class SizeSpecification {
+import Specification from "./Specification.js";
+
+export default class SizeSpecification extends Specification{
     constructor(size) {
+        super()
         this.size = size
     }
 

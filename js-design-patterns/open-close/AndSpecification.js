@@ -1,5 +1,8 @@
-export default class AndSpecification {
+import Specification from "./Specification.js";
+
+export default class AndSpecification extends Specification{
     constructor(...specs) {
+        super()
         this.specs = specs
     }
 
