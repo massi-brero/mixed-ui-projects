@@ -1,0 +1,95 @@
+:root {
+    --lightgrey: #efefef;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, .8);
+    --bounceEasing: cubic-bezier(.51, .92, .24, 1.15);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: inherit;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font: 100%/1.5 sans-serif;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.modal__button--open {
+    font-weight: bold;
+    background: var(--blue);
+    color: var(--white);
+    padding: .75rem 1.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .35s ease-in;
+}
+
+.modal-dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50vw;
+    max-height: 80vh;
+    border-radius: 4px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+.modal-dialog > * {
+    padding: 1rem;
+}
+
+.modal-dialog__header,
+.modal-dialog__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-dialog__header .modal-dialog__button--close {
+    font-size: 1.5rem;
+}
+
+.modal-dialog p + p {
+    margin-top: 1rem;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
