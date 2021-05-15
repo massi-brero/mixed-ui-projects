@@ -1,0 +1,14 @@
+[data-animation="slideInOutLeft"] .modal-dialog {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .5s var(--bounceEasing);
+}
+
+[data-animation="slideInOutLeft"].is-visible .modal-dialog {
+    opacity: 1;
+    transform: none;
+    transition-delay: .2s;
+}
+
+
+
