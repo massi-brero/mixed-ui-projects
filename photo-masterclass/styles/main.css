@@ -29,9 +29,10 @@ html {
 }
 
 .navigation__list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
 .navigation__list-item {
@@ -51,11 +52,6 @@ html {
     font-size: 1.5rem;
 }
 
-.navigation__list-item:last-of-type {
-    margin-left: -3rem;
-}
-
-
 .navigation__list-item-link:hover {
     border-bottom: .1rem solid rgb(0, 226, 156);
     color: lightgrey;
@@ -67,11 +63,17 @@ html {
     height: 4rem;
 }
 
-.navigation__list-item-link--icon {
-    padding-bottom: 0;
+.navigation__list-item:last-of-type {
+    margin-left: auto;
 }
 
-.navigation__list-item-link--icon:hover,
+.navigation__list-item-link.navigation__list-item-link--menu {
+    position: relative;
+    top: 0.3rem;
+    font-size: 2.5rem;
+}
+
+.navigation__list-item-link--menu:hover,
 .navigation__list-item-link--logo:hover {
     border-bottom: none;
 }
