@@ -6,6 +6,8 @@
 
 html {
     font-size: 100%;
+    font-family: 'Jost', sans-serif;
+
 }
 
 .container {
@@ -14,12 +16,12 @@ html {
 }
 
 .header {
-    height: 40rem;
+    height: 45rem;
 
-    background-image: linear-gradient(-5.5deg, white 49.9%, transparent 50.1%),
+    background-image: linear-gradient(-4.5deg, white 44.9%, transparent 45.2%),
     url('../images/pexels-benjamin-suter-3617500.jpg');
     background-repeat: no-repeat;
-    background-position: center 100%, center center;
+    background-position: center 100%, center 70%;
     background-size: 100vw 10vw, cover;
 }
 
@@ -32,7 +34,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
 }
 
 .navigation__list-item {
@@ -41,16 +43,25 @@ html {
 }
 
 
-
 .navigation__list-item-link {
     display: block;
     color: white;
     text-decoration: none;
     padding: .25rem;
-    margin: 2rem 2rem 0 2rem;
+    margin: 1rem 2rem 0 2rem;
     line-height: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-shadow: 0 0 .5rem black;
 }
+
+.navigation__list-item-link--logo {
+    margin-top: .75rem;
+}
+
+.navigation__list-item-link:not(.navigation__list-item-link--logo) {
+    margin-top: .5rem;
+}
+
 
 .navigation__list-item-link:hover {
     border-bottom: .1rem solid rgb(0, 226, 156);
@@ -68,8 +79,6 @@ html {
 }
 
 .navigation__list-item-link.navigation__list-item-link--menu {
-    position: relative;
-    top: 0.3rem;
     font-size: 2.5rem;
 }
 
