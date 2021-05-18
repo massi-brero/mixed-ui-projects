@@ -6,7 +6,7 @@
         <title>Photography Masterclass</title>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
         <style type="text/css">
              * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,6 +18,7 @@
              }
 
              .image-container {
+                 position: relative;
                  width: 15rem;
                  border: 1px solid rgb(100, 100, 100);
                  border-radius: 0.25rem;
@@ -27,12 +28,30 @@
              }
 
              .image-container__image {
+                 margin-top: -0.5rem;
                  width: 100%;
+                 height: 8rem;
+                 object-fit: cover;
+                 object-position: 100% 80%;
                  display: block;
+             }
+
+             .image-container__menu-button {
+                 position: absolute;
+                 top: .5rem;
+                 right: .5rem;
+                 width: 4rem;
+                 height: 4rem;
              }
 
              .image-container__heading {
                  padding: 0.25rem;
+                 font-size: 3rem;
+             }
+
+             .image-container__paragraph {
+                 position: absolute;
+                 bottom: 0;
              }
 
         </style>
@@ -52,11 +71,11 @@
                         S143.02,460.9,256,460.9S460.9,368.98,460.9,256S368.98,51.1,256,51.1z"/>
                 </g>
             </svg>
-            <h1 class="image-container__heading">Vanlife: Ein cooler Trend?</h1>
+            <h1 class="image-container__heading">Vanlife Ein cooler Trend?</h1>
             <img src="./pexels-gya-den-2303781.jpg" class="image-container__image" />
             <p class="image-container__paragraph">Das ist die Beschreibung vom Bild</p>
 
-        </div> 
+        </div>
 
     </body>
 </html>
