@@ -15,14 +15,42 @@ html {
     margin: 0 auto;
 }
 
+.header__container {
+    position: relative;
+
+}
+
 .header {
     height: 45rem;
 
-    background-image: linear-gradient(-4.5deg, white 44.9%, transparent 45.2%),
-    url('../images/pexels-benjamin-suter-3617500.jpg');
+    background-image: linear-gradient(-4.5deg, white 44.9%, transparent 45.2%);
     background-repeat: no-repeat;
-    background-position: center 100%, center 70%;
-    background-size: 100vw 10vw, cover;
+    background-position: center bottom;
+    background-size: 100% auto;
+}
+
+.header__background {
+    height: 40rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-image: url('../images/pexels-benjamin-suter-3617500.jpg');
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
+}
+
+.header__mountains {
+    height: 40rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-image: url('../images/pexels-benjamin-suter-3617500-mountains.webp');
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    background-size: cover;
 }
 
 .icon {
