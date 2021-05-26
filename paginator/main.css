@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #888;
+}
+
+.pagination {
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: grey;
+    padding: 20px;
+}
+
+.pagination .tableList {
+    min-height: 250px;
+    text-ident: 20px;
+}
+
+.tableList .objectBlock {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.clickPageNumber {
+    background-color: lightgrey;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.pagination-block {
+    text-align: center;
+    width: 100%;
+}
+
+.pagination-block span {
+    display: inline-block;
+}
+
+.pagination-block .pageButton {
+    background-color: grey;
+    color: white;
+}
+
+.pagination-block span:hover {
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 0.5;
+}
+
+.outline-none {
+    outline: none;
+    user-select: none;
+}
+
+
