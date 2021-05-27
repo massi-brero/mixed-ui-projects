@@ -1,29 +1,17 @@
-class Pagination {
-    objJson = [
-        { adName: "adName 1"},
-        { adName: "adName 2"},
-        { adName: "adName 3"},
-        { adName: "adName 4"},
-        { adName: "adName 5"},
-        { adName: "adName 6"},
-        { adName: "adName 7"},
-        { adName: "adName 8"},
-        { adName: "adName 9"},
-        { adName: "adName 10"},
-        { adName: "adName 11"},
-        { adName: "adName 12"},
-        { adName: "adName 13"},
-        { adName: "adName 14"},
-        { adName: "adName 15"},
-        { adName: "adName 16"}
-    ];
+export default class Pagination {
+    delegate;
     prevButton = null;
     nextButton = null;
     clickPageNumber = null;
     current_page = 1;
+    numberOfEntries = 0;
     records_per_page = 5;
 
-    constructor() {
+    constructor(delegate, opts) {
+        this.delegate = delegate;
+
+        this.numberOfEntries = opts.numberOfEntries || 0;
+        this.records_per_page = opts.records_per_page || this.records_per_page;
         this.initView();
     }
 
@@ -67,7 +55,6 @@ class Pagination {
     }
 
     changePage(page) {
-        const listingTable = document.querySelector('#listingTable');
 
         if (page < 1) {
             page = 1;
@@ -77,11 +64,12 @@ class Pagination {
             page = this.numPages();
         }
 
-        listingTable.innerHTML = '';
+        this.delegate.renderData(page);
+        // listingTable.innerHTML = '';
 
-        for (let i = (page - 1) * this.records_per_page; i < (page * this.records_per_page) && i < this.objJson.length; i++) {
-            listingTable.innerHTML += `<div class='objectBlock'>${this.objJson[i].adName}</div>`;
-        }
+        // for (let i = (page - 1) * this.records_per_page; i < (page * this.records_per_page) && i < this.objJson.length; i++) {
+        //     listingTable.innerHTML += `<div class='objectBlock'>${this.objJson[i].adName}</div>`;
+        // }
 
         this.checkButtonOpacity();
         this.selectedPage();
@@ -127,9 +115,7 @@ class Pagination {
 
     numPages()
     {
-        return Math.ceil(this.objJson.length / this.records_per_page);
+        return Math.ceil(this.numberOfEntries / this.records_per_page);
     }
 }
-
-const pagination = new Pagination();
 
