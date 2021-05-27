@@ -106,7 +106,7 @@ class Pagination {
     clickPage() {
         const self = this;
         document.addEventListener('click', function handler(e) {
-            if ([...e.target.classList].includes('.clickPageNumber')) {
+            if ([...e.target.classList].includes('clickPageNumber')) {
                 self.current_page = e.target.textContent;
                 self.changePage(self.current_page)
             }
@@ -115,8 +115,14 @@ class Pagination {
 
     addEventListeners() {
         const self = this;
-        this.prevButton.addEventListener('click', self.prevPage);
-        this.nextButton.addEventListener('click', self.nextPage);
+        this.prevButton.addEventListener('click', function handler() {
+            self.prevPage()
+        });
+        this.nextButton.addEventListener('click', function handler() {
+            self.nextPage()
+        });
+
+        self.pageNumbers()
     }
 
     numPages()
