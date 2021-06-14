@@ -1,4 +1,6 @@
 @import './config';
+@import './home';
+
 
 body {
     background-color: $primary-color;
@@ -20,9 +22,10 @@ a {
 header {
     position: fixed;
     z-index: 2;
-    width: 100%
+    width: 100%;
     padding: 1rem;
 }
+
 
 main {
     height: 100%;
