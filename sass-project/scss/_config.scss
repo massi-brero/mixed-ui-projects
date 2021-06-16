@@ -6,3 +6,15 @@ $secondary-color: #ff652f;
     margin: 0;
     padding: 0;
 }
+
+@mixin transition-ease {
+    transition: all .5s ease-in-out;
+}
+
+@function setTextColor($color) {
+    @if (lightness($color) > 40%)  {
+        @return black;
+    } @else {
+        @return white;
+    }
+}

@@ -12,4 +12,26 @@
         ),
         url('../img/model-1.jpg') center top;
     background-size: cover;
+
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 2px solid setTextColor($primary-color);
+
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+
+    &__burger {
+        position: absolute;
+        right: 0;
+        top: .5rem;
+        width: 28px;
+        height: 3px;
+        background: setTextColor($primary-color);
+        @include transition-ease;
+    }
 }
