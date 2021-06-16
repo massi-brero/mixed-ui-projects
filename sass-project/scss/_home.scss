@@ -24,14 +24,4 @@
             font-weight: 700;
         }
     }
-
-    &__burger {
-        position: absolute;
-        right: 0;
-        top: .5rem;
-        width: 28px;
-        height: 3px;
-        background: setTextColor($primary-color);
-        @include transition-ease;
-    }
 }
