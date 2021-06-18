@@ -11,6 +11,16 @@ $secondary-color: #ff652f;
     transition: all .5s ease-in-out;
 }
 
+@mixin bckg-image($path) {
+    background: 
+    linear-gradient(
+        to right,
+        rgba($primary-color, .6)
+        rgba($primary-color, .2)
+    ),
+    url(#{$path}) center top;
+}
+
 @function setTextColor($color) {
     @if (lightness($color) > 40%)  {
         @return black;
