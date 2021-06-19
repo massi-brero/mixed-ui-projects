@@ -19,6 +19,7 @@ $secondary-color: #ff652f;
         rgba($primary-color, .2)
     ),
     url(#{$path}) center top;
+    background-size: cover;
 }
 
 @function setTextColor($color) {

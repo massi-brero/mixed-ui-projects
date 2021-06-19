@@ -1,8 +1,8 @@
-.about {
+.projects {
     padding-bottom: 2rem;
 
     &__bio-image {
-        height: 50vh;
+        height: 30vh;
         width: 100%;
         @include bckg-image("../img/model-1.jpg");
         display: flex;
@@ -10,41 +10,31 @@
         align-items: center;
         justify-content: flex-end;
 
-        p {
+        .text-secondary {
+            font-size: 2rem;
             margin-bottom: 2rem;
         }
     }
 
-    &__bio {
-        width: 80%;
-        text-align: center;
-
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
-    }
-
-    .jobs {
+    .items {
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
+    }
 
-        &__job {
-            background: lighten($color: $primary-color, $amount: 10%);
-            padding: 0.5rem;
-            border-bottom: 5px solid $secondary-color;
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
 
-            h2,
-            h3 {
-                margin: 0.5rem 0;
-            }
-
-            h6 {
-                margin: 0.3rem 0;
-            }
+        img {
+            width: 100%;
         }
+
+        
     }
 
     .social-icons {
