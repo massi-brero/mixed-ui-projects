@@ -287,7 +287,7 @@
   margin-bottom: 2rem;
 }
 
-.projects .items {
+.projects__items {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
@@ -306,6 +306,41 @@
 
 .projects__item img {
   width: 100%;
+}
+
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff652f;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.projects__item:hover::after {
+  top: 0;
+  opacity: .9;
+}
+
+.projects__btns {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .projects .social-icons {

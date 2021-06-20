@@ -16,7 +16,7 @@
         }
     }
 
-    .items {
+    &__items {
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
@@ -34,7 +34,37 @@
             width: 100%;
         }
 
-        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: .9;
+            }
+        }
+    }
+ 
+    &__btns{
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
     }
 
     .social-icons {
