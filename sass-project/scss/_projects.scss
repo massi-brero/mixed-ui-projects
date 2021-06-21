@@ -51,6 +51,10 @@
                 top: 0;
                 opacity: .9;
             }
+
+            .projects__btn {
+                opacity: 1;
+            }
         }
     }
  
@@ -64,7 +68,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        text-align: center;
+        text-align: left;
+    }
+
+    &__btn {
+        opacity: 0;
+        color: setTextColor($secondary-color);
+        @include transition-ease;
+
+        &:hover {
+            color: setTextColor(setTextColor($secondary-color));
+        }
     }
 
     .social-icons {

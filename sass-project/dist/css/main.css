@@ -326,6 +326,10 @@
   opacity: .9;
 }
 
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+
 .projects__btns {
   position: absolute;
   top: 0;
@@ -340,7 +344,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: left;
+}
+
+.projects__btn {
+  opacity: 0;
+  color: black;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.projects__btn:hover {
+  color: white;
 }
 
 .projects .social-icons {
