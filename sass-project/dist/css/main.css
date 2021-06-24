@@ -27,7 +27,7 @@
 }
 
 .home__name--last {
-  color: #ff652f;
+  color: #f75616;
   font-weight: 700;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #f75616;
 }
 
 .nav .menu-nav__link {
@@ -156,7 +156,7 @@
 }
 
 .nav .menu-nav__link::hover {
-  color: #ff652f;
+  color: #f75616;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -230,7 +230,7 @@
 .about .jobs__job {
   background: #414141;
   padding: 0.5rem;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #f75616;
 }
 
 .about .jobs__job h2,
@@ -299,7 +299,7 @@
 
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #f75616;
   overflow: hidden;
   cursor: pointer;
 }
@@ -315,7 +315,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ff652f;
+  background-color: #f75616;
   opacity: 0;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -373,6 +373,72 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 20vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.85))), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.85) rgba(39, 39, 39, 0.2)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contact__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
+.contact__email, .contact__mobile,
+.contact__address * {
+  line-height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
+}
+
 body {
   background-color: #272727;
   color: white;
@@ -393,7 +459,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #f75616;
 }
 
 header {
@@ -421,7 +487,7 @@ main .social-icons a {
 }
 
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #f75616;
 }
 
 footer {
