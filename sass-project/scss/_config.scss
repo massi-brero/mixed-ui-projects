@@ -12,10 +12,10 @@ $secondary-color: #f75616;
 }
 
 @mixin bckg-image($path) {
-    background: 
+    background:
     linear-gradient(
         to right,
-        rgba($primary-color, .6)
+        rgba($primary-color, .6),
         rgba($primary-color, .2)
     ),
     url(#{$path}) center top;

@@ -11,7 +11,7 @@
   align-items: center;
   text-align: center;
   background-size: cover;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.6) rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
   background-size: cover;
 }
 .home__name {
@@ -114,7 +114,7 @@
   font-weight: 300;
   transition: all 0.5s ease-in-out;
 }
-.nav .menu-nav__link :hover {
+.nav .menu-nav__link::hover {
   color: #f75616;
 }
 
@@ -140,7 +140,7 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.6) rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -190,7 +190,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.6), rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.6) rgba(39, 39, 39, 0.2)), url(../img/model-1.jpg) center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -297,6 +297,7 @@
 
   .nav {
     visibility: visible;
+    height: 100%;
   }
   .nav .menu-nav {
     display: block;
@@ -306,10 +307,13 @@
     text-align: right;
   }
   .nav .menu-nav__item {
+    transform: translateX(0);
+  }
+  .nav__item {
     display: inline;
     padding-right: 1.5rem;
   }
-  .nav .menu-nav__link {
+  .nav__link {
     font-size: 1.5rem;
   }
 }

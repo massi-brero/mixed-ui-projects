@@ -106,7 +106,7 @@ $burger-element-height: 3px;
             font-weight: 300;
             @include transition-ease;
 
-            &::hover {
+            :hover {
                 color: $secondary-color;
             }
         }
