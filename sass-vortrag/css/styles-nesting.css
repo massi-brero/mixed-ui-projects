@@ -1,0 +1,34 @@
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: #e8fae8;
+}
+
+.box {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #53d753;
+  margin: 0 auto 0.4rem;
+}
+.box.version-1 {
+  border-top: 4px solid black;
+  border-right: 4px solid red;
+  border-bottom: 4px solid orange;
+  border-left: 4px solid purple;
+}
+.box.version-2 {
+  background-color: #8de48d;
+}
+.box.version-3 {
+  background-color: #aeecae;
+}
+.box:hover {
+  background-color: #c3f1c3;
+}
+
+/*# sourceMappingURL=styles-nesting.css.map */

@@ -1,0 +1,44 @@
+$base-fontsize: 16px;
+$primary-color: #53d753;
+
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $base-fontsize;
+  background-color: lighten($primary-color, 36);
+}
+
+.box {
+  $size: 200px;
+  cursor: pointer;
+
+  width: $size;
+  height: $size;
+  border-radius: 6px;
+  background-color: $primary-color;
+  margin: 0 auto .4rem;
+
+  &.version-1 {
+    border: {
+      top: 4px solid black;
+      right: 4px solid red;
+      bottom: 4px solid orange;
+      left: 4px solid purple;
+    }
+  }
+
+  &.version-2 {
+    background-color: lighten($primary-color, 14);
+  }
+
+  &.version-3 {
+    background-color: lighten($primary-color, 22);
+  }
+
+  &:hover {
+    background-color: lighten($primary-color, 27);
+  }
+}
+

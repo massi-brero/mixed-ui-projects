@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+  background-color: #cff4cf;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.color-test {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 6px;
+  background-color: #53d753;
+}
+
+.color-test:hover {
+  background-color: #7ce17c;
+}
+
+/*# sourceMappingURL=styles-base.css.map */
