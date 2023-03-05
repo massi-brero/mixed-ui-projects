@@ -10,7 +10,7 @@ body {
   background-color: lighten($primary-color, 36);
 }
 
-.box {
+%box {
   $size: 200px;
   cursor: pointer;
 
@@ -20,23 +20,6 @@ body {
   background-color: $primary-color;
   margin: 0 auto .4rem;
 
-  &.version-1 {
-    /*border: {
-      top: 4px solid black;
-      right: 4px solid red;
-      bottom: 4px solid orange;
-      left: 4px solid purple;
-    }*/
-  }
-
-  &.version-2 {
-    background-color: lighten($primary-color, 14);
-  }
-
-  &.version-3 {
-    background-color: lighten($primary-color, 22);
-  }
-
   &:hover {
     background-color: lighten($primary-color, 27);
   }
@@ -45,4 +28,19 @@ body {
     width: $size - 100px;
     height: $size - 100px;
   }
+}
+
+
+.box1 {
+  @extend %box;
+}
+
+.box2 {
+  @extend %box;
+  background-color: lighten($primary-color, 14);
+}
+
+.box3 {
+  @extend %box;
+  background-color: lighten($primary-color, 22);
 }

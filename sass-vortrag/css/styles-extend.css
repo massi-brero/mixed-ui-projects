@@ -7,7 +7,7 @@ body {
   background-color: #e8fae8;
 }
 
-.box {
+.box3, .box2, .box1 {
   cursor: pointer;
   width: 200px;
   height: 200px;
@@ -15,28 +15,22 @@ body {
   background-color: #53d753;
   margin: 0 auto 0.4rem;
 }
-.box.version-1 {
-  /*border: {
-    top: 4px solid black;
-    right: 4px solid red;
-    bottom: 4px solid orange;
-    left: 4px solid purple;
-  }*/
-}
-.box.version-2 {
-  background-color: #8de48d;
-}
-.box.version-3 {
-  background-color: #aeecae;
-}
-.box:hover {
+.box3:hover, .box2:hover, .box1:hover {
   background-color: #c3f1c3;
 }
 @media screen and (max-width: 760px) {
-  .box {
+  .box3, .box2, .box1 {
     width: 100px;
     height: 100px;
   }
 }
 
-/*# sourceMappingURL=styles-nesting.css.map */
+.box2 {
+  background-color: #8de48d;
+}
+
+.box3 {
+  background-color: #aeecae;
+}
+
+/*# sourceMappingURL=styles-extend.css.map */
