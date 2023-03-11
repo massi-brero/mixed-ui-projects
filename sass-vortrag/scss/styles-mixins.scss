@@ -1,6 +1,6 @@
 // klassischer CSS Import
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 @import 'vars';
+@import 'mixins';
 
 
 :root {
@@ -10,6 +10,12 @@
 body {
   font-size: $base-fontsize;
   background-color: lighten($primary-color, 36);
+}
+
+.box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 %box {
@@ -35,16 +41,16 @@ body {
 
 .box1 {
   @extend %box;
+  @include border-radius;
 }
 
 .box2 {
   @extend %box;
   background-color: lighten($primary-color, 14);
+  @include border-radius;
 }
 
 .box3 {
   @extend %box;
   background-color: lighten($primary-color, 22);
-
-  @import 'test-import';
 }
