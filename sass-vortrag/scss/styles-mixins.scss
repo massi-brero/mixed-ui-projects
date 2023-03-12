@@ -41,16 +41,22 @@ body {
 
 .box1 {
   @extend %box;
-  @include border-radius;
+  @include border-radius();
 }
 
 .box2 {
   @extend %box;
   background-color: lighten($primary-color, 14);
-  @include border-radius;
+  @include border-radius(18px);
 }
 
 .box3 {
   @extend %box;
   background-color: lighten($primary-color, 22);
+  @include border-radius(50%);
+
+  &:hover {
+    @include bg-transition(rgba(73, 128, 78, 0.43), 2s);
+  }
 }
+
